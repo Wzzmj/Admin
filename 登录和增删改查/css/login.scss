@@ -1,0 +1,326 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: block;
+    .loginwhole {
+        background-image: url("../img/login.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .login {
+            width: 340px;
+            height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 0 30px;
+            color: #606266;
+            font-size: 13px;
+            .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: dimgrey;
+                :hover {
+                    color: #1296db;
+                }
+                line-height: 1.1;
+                .loginTitle {
+                    color: #1296db;
+                    font: {
+                        size: 24px;
+                        weight: 500;
+                    }
+                }
+                margin-top: 20px;
+                span {
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+            .input_login {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                margin-top: 50px;
+                height: 40px;
+                // border: 1px solid #e1e1e1;
+                cursor: default;
+                #imguser_login,
+                #imgpassword_login {
+                    display: inline-block;
+                    width: 40px;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 33;
+                    // background-color: red;
+                    img {
+                        position: absolute;
+                        margin: 10px 10px;
+                        top: 3px;
+                    }
+                }
+                #eye_login {
+                    display: inline-block;
+                    width: 40px;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 33;
+                    left: 292px;
+                    cursor: pointer;
+                    img {
+                        position: absolute;
+                        margin: 10px 10px;
+                        top: 3px;
+                    }
+                }
+                .offBorder {
+                    position: absolute;
+                    width: 87%;
+                    height: 100%;
+                    border: none;
+                    border: 1px solid #e1e1e1;
+                    // outline: 1px solid blue;
+                    border-radius: 4px;
+                }
+                input {
+                    padding-left: 35px;
+                }
+                // input:focus {
+                //     outline: 0;
+                //     border: 1px solid #f95d5d;
+                //     box-shadow: 0px 0px 10px 0px #f95d5d;
+                // }
+                input:focus {
+                    outline: 0;
+                    border: 1px solid #e1e1e1;
+                    box-shadow: 0px 0px 10px 0px #5dc5f9;
+                }
+            }
+
+            //记住密码部分
+            .remDiv {
+                width: auto;
+                height: 40px;
+                line-height: 66px;
+                position: relative;
+                margin-top: 20px;
+                label {
+                    position: relative;
+                    top: -2px;
+                    cursor: pointer;
+                    #rem {
+                        border-radius: 4px;
+                        display: inline-block;
+
+                        border: 1px solid #dcdfe6;
+                        cursor: pointer;
+                        // #rem:hover {
+                        // }
+                        // #rem:active {
+                        //     color: #2762ed;
+                        // }
+                    }
+                }
+            }
+            #fail_login {
+                width: 200px;
+                height: 30px;
+                position: relative;
+                // background-color: #af7b7b;
+                color: red;
+                left: 132px;
+            }
+            //登录按钮部分
+            .btn {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .log {
+                    width: 100%;
+                    height: 50px;
+                    background-color: rgb(0, 117, 255);
+                    margin-top: 31px;
+                    color: #ffffff;
+                    outline: none;
+                    border: none;
+                    border-radius: 6px;
+                    z-index: 11;
+                    cursor: pointer;
+                }
+            }
+        }
+        .register {
+            width: 340px;
+            height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 0 30px;
+            color: #606266;
+            font-size: 13px;
+            display: none;
+            .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: dimgrey;
+                :hover {
+                    color: #1296db;
+                }
+                line-height: 1.1;
+                .registerTitle {
+                    color: #1296db;
+                    font: {
+                        size: 24px;
+                        weight: 500;
+                    }
+                }
+                margin-top: 20px;
+                span {
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+            .input_register {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                margin-top: 20px;
+                height: 40px;
+                // border: 1px solid #e1e1e1;
+                cursor: default;
+                #imguser_register,
+                #imgmail_register,
+                #imgpassword_register,
+                #imgsafe_register {
+                    display: inline-block;
+                    width: 40px;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 33;
+                    // background-color: red;
+                    img {
+                        position: absolute;
+                        margin: 10px 10px;
+                        top: 3px;
+                    }
+                }
+                #usercode_register_check {
+                    display: block;
+                    position: absolute;
+                    top: 45px;
+                    width: 150px;
+                    height: 20px;
+                    color: red;
+                    font-size: 12px;
+                    display: none;
+                }
+                #passwordcode_register_check {
+                    display: block;
+                    position: absolute;
+                    top: 45px;
+                    width: 150px;
+                    height: 20px;
+                    color: red;
+                    font-size: 12px;
+                    display: none;
+                }
+                #mailcode_register_check {
+                    display: block;
+                    position: absolute;
+                    top: 45px;
+                    width: 150px;
+                    height: 20px;
+                    color: red;
+                    font-size: 12px;
+                    display: none;
+                }
+                #eye_register {
+                    display: inline-block;
+                    width: 40px;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 33;
+                    left: 292px;
+                    cursor: pointer;
+                    img {
+                        position: absolute;
+                        margin: 10px 10px;
+                        top: 3px;
+                    }
+                }
+                .offBorder {
+                    position: absolute;
+                    width: 87%;
+                    height: 100%;
+                    border: none;
+                    border: 1px solid #e1e1e1;
+                    // outline: 1px solid blue;
+                    border-radius: 4px;
+                }
+                input {
+                    padding-left: 35px;
+                }
+                // input:focus {
+                //     outline: 0;
+                //     border: 1px solid #f95d5d;
+                //     box-shadow: 0px 0px 10px 0px #f95d5d;
+                // }
+                input:focus {
+                    outline: 0;
+                    border: 1px solid #e1e1e1;
+                    box-shadow: 0px 0px 10px 0px #5dc5f9;
+                }
+            }
+            .safecode_half {
+                width: 50%;
+                // z-index: 999;
+            }
+            #sendcode_register {
+                width: 135px;
+                height: 40px;
+                position: absolute;
+                left: 200px;
+                background-color: #67b7e5;
+                border: none;
+                color: white;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            #fail_sendcode {
+                display: block;
+                position: absolute;
+                left: 200px;
+                top: 40px;
+                // background-color: pink;
+                width: 150px;
+                height: 20px;
+                color: red;
+                // display: none;
+            }
+            //注册按钮部分
+            .btn {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .reg {
+                    width: 100%;
+                    height: 50px;
+                    background-color: rgb(0, 117, 255);
+                    margin-top: 25px;
+                    color: #ffffff;
+                    outline: none;
+                    border: none;
+                    border-radius: 6px;
+                    z-index: 11;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
